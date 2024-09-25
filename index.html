@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Lista de Exercícios</title>
+</head>
+<body>
+    <div class="conteudo">
+        <h1 id="conteudo-titulo">Escolha uma opção</h1>
+        <br>
+        <form class="formulario" action="dados.php" method="POST">
+            <p><strong id="numero-destaque">1.</strong> Números de 1 a 100 - pares e em ordem crescente</p>
+            <p><strong id="numero-destaque">2.</strong> Números de 1 a 100 - ímpares e em ordem decrescente </p>
+            <label><strong id="numero-destaque">3.</strong> Tabuada do número:</label>
+            <input type="number" min="1" max="10" placeholder="De 1 a 10" name="tabuada">
+            <p><strong id="numero-destaque">4.</strong> Todas as tabuadas de 1 a 10</p>
+            <p><strong id="numero-destaque">5.</strong> 20 primeiros termos da sequência Fibonacci</p>
+            <br><br>
+            <label>Digite o número correspondente:</label>
+            <br>
+            <input type="number" min="1" max="5" name="opcao" id="opcao">
+            <input type="submit" id="botao">
+        </form>
+        <div class="resultado"></div>
+    </div>
+</body>
+</html>
